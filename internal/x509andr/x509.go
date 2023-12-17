@@ -1431,6 +1431,7 @@ func andrCertToGoCert(certificate *Certificate) *x509.Certificate {
 			// not used in Android certs anyway
 			continue
 		}
+		fmt.Printf("n:%s\n",n)
 
 		out := goval.FieldByName(n)
 		if out.IsValid() {
